@@ -82,7 +82,11 @@ function updateBoard() {
             cell.style.backgroundColor = getBackgroundColor(board[i][j]);
         }
     }
+    requestAnimationFrame(() => {
+        requestAnimationFrame(updateBoard); // 确保更新逻辑在浏览器刷新率下运行
+    });
 }
+
 
 /**
  * 根据数字返回对应的背景颜色
