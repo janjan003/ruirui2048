@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2048 Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- 引入CSS文件 -->
 </head>
 <body>
     <header>
-        <h1>2048</h1>
-        <button id="newGameButton">New Game</button>
-        <p>Score: <span id="score">0</span></p>
+        <h1>2048</h1> <!-- 游戏标题 -->
+        <button id="newGameButton">New Game</button> <!-- 新游戏按钮 -->
+        <p>Score: <span id="score">0</span></p> <!-- 分数显示 -->
     </header>
-    <div id="grid-container">
+    <div id="grid-container"> <!-- 棋盘容器 -->
+        <!-- 棋盘的16个格子 -->
         <div class="grid-cell" id="grid-cell-0-0"><img src="" alt=""></div>
         <div class="grid-cell" id="grid-cell-0-1"><img src="" alt=""></div>
         <div class="grid-cell" id="grid-cell-0-2"><img src="" alt=""></div>
@@ -29,7 +31,7 @@
         <div class="grid-cell" id="grid-cell-3-2"><img src="" alt=""></div>
         <div class="grid-cell" id="grid-cell-3-3"><img src="" alt=""></div>
     </div>
-    <div id="gameover">GAME OVER</div>
-    <script src="script.js"></script>
+    <div id="gameover">GAME OVER</div> <!-- 游戏结束提示 -->
+    <script src="script.js"></script> <!-- 引入JavaScript文件 -->
 </body>
 </html>
